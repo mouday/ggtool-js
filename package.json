@@ -1,6 +1,6 @@
 {
   "name": "ggtool-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a tool for js dev",
   "main": "index.js",
   "scripts": {
