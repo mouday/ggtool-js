@@ -2,21 +2,28 @@
 
 // shell.js https://blog.51cto.com/13869008/2173451
 // const util = require("ggtool/util.js");
-var shelljs = require('shelljs');
+
+// const expressUtils = require('./utils/express-utils')
+const genTpl = require("./gen")
 
 console.log(process.cwd());
 
-// init express
-let commands = [
-    'echo init',
-    'npm init -y',
-    'git init',
-    'echo node_modules > .gitignore',
-    'npm install express -S --registry=https://registry.npm.taobao.org',
-    'npm install nodemon -D --registry=https://registry.npm.taobao.org',
-    'echo success'
-]
+// console.log(process.argv);
+// console.log(argv);
 
-for(let command of commands){
-    shelljs.exec(command)
+function help() {
+    console.log("commands: ");
+    console.log("eg: $ ggtool gen express");
+    console.log("params: express、flask");
 }
+
+const commandMap = {
+    "help": help,
+    "gen": genTpl
+}
+
+var command = commandMap[process.argv[2]]
+if (!command) {
+    command = help
+}
+command(process.argv[3]);

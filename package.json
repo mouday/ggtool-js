@@ -1,6 +1,6 @@
 {
   "name": "ggtool-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a tool for js dev",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,5 @@
   "license": "ISC",
   "bin": {
     "ggtool": "index.js"
-  },
-  "devDependencies": {
-    "shelljs": "^0.8.3"
   }
 }
