@@ -1,14 +1,26 @@
 {
   "name": "ggtool-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a tool for js dev",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "tool",
+    "express",
+    "flask"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mouday/ggtool-js"
+  },
+  "author": "pengshiyu",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mouday/ggtool-js/issues"
+  },
+  "homepage": "https://github.com/mouday/ggtool-js",
   "bin": {
     "ggtool": "index.js"
   }
